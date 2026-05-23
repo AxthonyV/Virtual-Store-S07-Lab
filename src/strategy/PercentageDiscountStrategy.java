@@ -1,6 +1,6 @@
 package strategy;
 
-public class PercentageDiscountStrategy {
+public class PercentageDiscountStrategy implements DiscountStrategy {
     private double percentage;
 
     public PercentageDiscountStrategy(double percentage) {
@@ -13,5 +13,3 @@ public class PercentageDiscountStrategy {
         return total - descuento;
     }
 }
-
-
