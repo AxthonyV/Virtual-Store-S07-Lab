@@ -1,0 +1,9 @@
+package strategy;
+
+public class NoDiscountStrategy implements DiscountStrategy {
+    @Override
+    public double applyDiscount(double total) {
+        System.out.println("Sin descuento.");
+        return total;
+    }
+}
