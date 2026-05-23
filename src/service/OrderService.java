@@ -33,6 +33,8 @@ public class OrderService {
         System.out.println("Total a pagar: S/ " + finalTotal);
         paymentProcessor.pay(finalTotal);
 
+        System.out.println("Compra confirmada por S/ " + finalTotal);
+
         String mensaje = "Compra por S/ " + finalTotal + " confirmada.";
         for (OrderObserver o : observers) {
             o.update(mensaje);
